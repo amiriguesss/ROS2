@@ -1,0 +1,26 @@
+[0.309s] Invoking command in '/home/khatam/ur_lab_ws/src/ur_lab': PYTHONPATH=/home/khatam/ur_lab_ws/build/ur_lab/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/khatam/ur_lab_ws/install/ur_lab/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ur_lab build --build-base /home/khatam/ur_lab_ws/build/ur_lab/build install --record /home/khatam/ur_lab_ws/build/ur_lab/install.log --single-version-externally-managed install_data
+[0.441s] running egg_info
+[0.441s] writing ../../build/ur_lab/ur_lab.egg-info/PKG-INFO
+[0.441s] writing dependency_links to ../../build/ur_lab/ur_lab.egg-info/dependency_links.txt
+[0.441s] writing entry points to ../../build/ur_lab/ur_lab.egg-info/entry_points.txt
+[0.441s] writing requirements to ../../build/ur_lab/ur_lab.egg-info/requires.txt
+[0.441s] writing top-level names to ../../build/ur_lab/ur_lab.egg-info/top_level.txt
+[0.442s] reading manifest file '../../build/ur_lab/ur_lab.egg-info/SOURCES.txt'
+[0.443s] writing manifest file '../../build/ur_lab/ur_lab.egg-info/SOURCES.txt'
+[0.443s] running build
+[0.443s] running build_py
+[0.443s] copying ur_lab/move_robot.py -> /home/khatam/ur_lab_ws/build/ur_lab/build/lib/ur_lab
+[0.443s] running install
+[0.443s] running install_lib
+[0.444s] copying /home/khatam/ur_lab_ws/build/ur_lab/build/lib/ur_lab/move_robot.py -> /home/khatam/ur_lab_ws/install/ur_lab/lib/python3.10/site-packages/ur_lab
+[0.444s] byte-compiling /home/khatam/ur_lab_ws/install/ur_lab/lib/python3.10/site-packages/ur_lab/move_robot.py to move_robot.cpython-310.pyc
+[0.445s] running install_data
+[0.445s] copying worlds/lab.world -> /home/khatam/ur_lab_ws/install/ur_lab/share/ur_lab/worlds
+[0.445s] running install_egg_info
+[0.446s] removing '/home/khatam/ur_lab_ws/install/ur_lab/lib/python3.10/site-packages/ur_lab-0.0.0-py3.10.egg-info' (and everything under it)
+[0.446s] Copying ../../build/ur_lab/ur_lab.egg-info to /home/khatam/ur_lab_ws/install/ur_lab/lib/python3.10/site-packages/ur_lab-0.0.0-py3.10.egg-info
+[0.446s] running install_scripts
+[0.457s] Installing add_scene script to /home/khatam/ur_lab_ws/install/ur_lab/lib/ur_lab
+[0.457s] Installing move_robot script to /home/khatam/ur_lab_ws/install/ur_lab/lib/ur_lab
+[0.457s] writing list of installed files to '/home/khatam/ur_lab_ws/build/ur_lab/install.log'
+[0.469s] Invoked command in '/home/khatam/ur_lab_ws/src/ur_lab' returned '0': PYTHONPATH=/home/khatam/ur_lab_ws/build/ur_lab/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/khatam/ur_lab_ws/install/ur_lab/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ur_lab build --build-base /home/khatam/ur_lab_ws/build/ur_lab/build install --record /home/khatam/ur_lab_ws/build/ur_lab/install.log --single-version-externally-managed install_data

@@ -1,0 +1,5 @@
+  File "/home/khatam/ur_lab_ws/install/ur_lab/lib/python3.10/site-packages/ur_lab/move_robot.py", line 97
+    p3.time_from_start.sec = 
+                             ^
+SyntaxError: invalid syntax
+

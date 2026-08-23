@@ -1,0 +1,5 @@
+  File "/home/khatam/ur_lab_ws/install/ur_lab/lib/python3.10/site-packages/ur_lab/move_robot.py", line 198
+    4. Spawn a BLUE cube (blocks until spawned)
+       ^^^^^
+SyntaxError: invalid syntax
+

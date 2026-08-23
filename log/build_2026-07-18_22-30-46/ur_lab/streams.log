@@ -1,0 +1,26 @@
+[0.273s] Invoking command in '/home/khatam/ur_lab_ws/src/ur_lab': PYTHONPATH=/home/khatam/ur_lab_ws/build/ur_lab/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/khatam/ur_lab_ws/install/ur_lab/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ur_lab build --build-base /home/khatam/ur_lab_ws/build/ur_lab/build install --record /home/khatam/ur_lab_ws/build/ur_lab/install.log --single-version-externally-managed install_data
+[0.377s] running egg_info
+[0.377s] writing ../../build/ur_lab/ur_lab.egg-info/PKG-INFO
+[0.377s] writing dependency_links to ../../build/ur_lab/ur_lab.egg-info/dependency_links.txt
+[0.377s] writing entry points to ../../build/ur_lab/ur_lab.egg-info/entry_points.txt
+[0.377s] writing requirements to ../../build/ur_lab/ur_lab.egg-info/requires.txt
+[0.377s] writing top-level names to ../../build/ur_lab/ur_lab.egg-info/top_level.txt
+[0.378s] reading manifest file '../../build/ur_lab/ur_lab.egg-info/SOURCES.txt'
+[0.378s] writing manifest file '../../build/ur_lab/ur_lab.egg-info/SOURCES.txt'
+[0.378s] running build
+[0.378s] running build_py
+[0.378s] copying ur_lab/move_robot.py -> /home/khatam/ur_lab_ws/build/ur_lab/build/lib/ur_lab
+[0.378s] running install
+[0.378s] running install_lib
+[0.379s] copying /home/khatam/ur_lab_ws/build/ur_lab/build/lib/ur_lab/move_robot.py -> /home/khatam/ur_lab_ws/install/ur_lab/lib/python3.10/site-packages/ur_lab
+[0.379s] byte-compiling /home/khatam/ur_lab_ws/install/ur_lab/lib/python3.10/site-packages/ur_lab/move_robot.py to move_robot.cpython-310.pyc
+[0.379s] running install_data
+[0.379s] Sorry: IndentationError: unindent does not match any outer indentation level (move_robot.py, line 184)
+[0.380s] running install_egg_info
+[0.380s] removing '/home/khatam/ur_lab_ws/install/ur_lab/lib/python3.10/site-packages/ur_lab-0.0.0-py3.10.egg-info' (and everything under it)
+[0.380s] Copying ../../build/ur_lab/ur_lab.egg-info to /home/khatam/ur_lab_ws/install/ur_lab/lib/python3.10/site-packages/ur_lab-0.0.0-py3.10.egg-info
+[0.380s] running install_scripts
+[0.389s] Installing add_scene script to /home/khatam/ur_lab_ws/install/ur_lab/lib/ur_lab
+[0.390s] Installing move_robot script to /home/khatam/ur_lab_ws/install/ur_lab/lib/ur_lab
+[0.390s] writing list of installed files to '/home/khatam/ur_lab_ws/build/ur_lab/install.log'
+[0.400s] Invoked command in '/home/khatam/ur_lab_ws/src/ur_lab' returned '0': PYTHONPATH=/home/khatam/ur_lab_ws/build/ur_lab/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/khatam/ur_lab_ws/install/ur_lab/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ur_lab build --build-base /home/khatam/ur_lab_ws/build/ur_lab/build install --record /home/khatam/ur_lab_ws/build/ur_lab/install.log --single-version-externally-managed install_data

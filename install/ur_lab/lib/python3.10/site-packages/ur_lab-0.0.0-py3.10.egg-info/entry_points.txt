@@ -1,0 +1,4 @@
+[console_scripts]
+add_scene = ur_lab.add_scene:main
+move_robot = ur_lab.move_robot:main
+
