@@ -10,10 +10,6 @@ setup.py
 ../../build/ur_lab/ur_lab.egg-info/zip-safe
 launch/sim.launch.py
 resource/ur_lab
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py
-test/testcube.py
 ur_lab/__init__.py
 ur_lab/add_scene.py
 ur_lab/move_robot.py
@@ -21,4 +17,11 @@ ur_lab/move_robot2.py
 ur_lab/move_spawn.py
 ur_lab/test.py
 ur_lab/testcube.py
+ur_lab.egg-info/PKG-INFO
+ur_lab.egg-info/SOURCES.txt
+ur_lab.egg-info/dependency_links.txt
+ur_lab.egg-info/entry_points.txt
+ur_lab.egg-info/requires.txt
+ur_lab.egg-info/top_level.txt
+ur_lab.egg-info/zip-safe
 worlds/lab.world
