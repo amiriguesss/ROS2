@@ -1,0 +1,29 @@
+[2.252s] Invoking command in '/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab': PYTHONPATH=/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab/build --no-deps symlink_data
+[2.809s] running develop
+[2.984s] running egg_info
+[2.986s] creating ur_lab.egg-info
+[2.988s] writing ur_lab.egg-info/PKG-INFO
+[2.993s] writing dependency_links to ur_lab.egg-info/dependency_links.txt
+[2.997s] writing entry points to ur_lab.egg-info/entry_points.txt
+[3.000s] writing requirements to ur_lab.egg-info/requires.txt
+[3.004s] writing top-level names to ur_lab.egg-info/top_level.txt
+[3.008s] writing manifest file 'ur_lab.egg-info/SOURCES.txt'
+[3.094s] reading manifest file 'ur_lab.egg-info/SOURCES.txt'
+[3.145s] writing manifest file 'ur_lab.egg-info/SOURCES.txt'
+[3.158s] running build_ext
+[3.161s] Creating /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/lib/python3.10/site-packages/ur-lab.egg-link (link to .)
+[3.180s] Installing add_scene script to /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/lib/ur_lab
+[3.192s] Installing move_robot script to /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/lib/ur_lab
+[3.210s] 
+[3.212s] Installed /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab
+[3.214s] running symlink_data
+[3.221s] creating /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/share/ament_index
+[3.223s] creating /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/share/ament_index/resource_index
+[3.226s] creating /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/share/ament_index/resource_index/packages
+[3.240s] symbolically linking /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab/resource/ur_lab -> /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/share/ament_index/resource_index/packages
+[3.258s] symbolically linking /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab/package.xml -> /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/share/ur_lab
+[3.266s] creating /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/share/ur_lab/launch
+[3.281s] symbolically linking /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab/launch/sim.launch.py -> /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/share/ur_lab/launch
+[3.289s] creating /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/share/ur_lab/worlds
+[3.302s] symbolically linking /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab/worlds/lab.world -> /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/share/ur_lab/worlds
+[3.326s] Invoked command in '/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab' returned '0': PYTHONPATH=/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab/build --no-deps symlink_data

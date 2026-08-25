@@ -1,13 +1,6 @@
 package.xml
 setup.cfg
 setup.py
-../../build/ur_lab/ur_lab.egg-info/PKG-INFO
-../../build/ur_lab/ur_lab.egg-info/SOURCES.txt
-../../build/ur_lab/ur_lab.egg-info/dependency_links.txt
-../../build/ur_lab/ur_lab.egg-info/entry_points.txt
-../../build/ur_lab/ur_lab.egg-info/requires.txt
-../../build/ur_lab/ur_lab.egg-info/top_level.txt
-../../build/ur_lab/ur_lab.egg-info/zip-safe
 launch/sim.launch.py
 resource/ur_lab
 ur_lab/__init__.py
