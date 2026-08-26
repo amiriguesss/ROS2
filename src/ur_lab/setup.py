@@ -25,12 +25,19 @@ setup(
 
         ('share/' + package_name + '/worlds',
             ['worlds/lab.world']),
+
+        ('share/' + package_name + '/config',
+            ['config/ur_controllers.yaml']),
+
+        ('share/' + package_name + '/urdf',
+            ['urdf/ur5e_gripper.urdf.xacro']),
     ],
 
     entry_points={
         'console_scripts': [
         'add_scene = ur_lab.add_scene:main',
         'move_robot = ur_lab.move_robot:main',
+        'pick_cube = ur_lab.pick_cube:main',
         ],
     },
 )

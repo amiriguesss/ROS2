@@ -3,6 +3,7 @@ from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch_ros.actions import Node
 
 def generate_launch_description():
 
@@ -23,10 +24,21 @@ def generate_launch_description():
         launch_arguments={
             'ur_type': 'ur5e',
             'world': world,
-            'launch_rviz': 'false'
+            'launch_rviz': 'false',
+            'runtime_config_package': 'ur_lab',
+            'controllers_file': 'ur_controllers.yaml',
+            'description_package': 'ur_lab',
+            'description_file': 'ur5e_gripper.urdf.xacro'
         }.items()
     )
 
+    gripper_controller_spawner = Node(
+        package='controller_manager',
+        executable='spawner',
+        arguments=['gripper_controller', '-c', '/controller_manager'],
+    )
+
     return LaunchDescription([
-        ur_sim
+        ur_sim,
+        gripper_controller_spawner
     ])

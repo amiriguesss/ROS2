@@ -1,1 +1,1 @@
-gazebo_ros:rclpy:trajectory_msgs
+control_msgs:controller_manager:controller_manager_msgs:gazebo_ros:gazebo_ros2_control:position_controllers:rclpy:trajectory_msgs:ur_description:xacro

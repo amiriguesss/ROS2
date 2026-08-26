@@ -1,4 +1,5 @@
 [console_scripts]
 add_scene = ur_lab.add_scene:main
 move_robot = ur_lab.move_robot:main
+pick_cube = ur_lab.pick_cube:main
 

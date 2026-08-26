@@ -3,6 +3,31 @@
 
     <plugin name="gazebo_ros_init" filename="libgazebo_ros_init.so"/>
     <plugin name="gazebo_ros_factory" filename="libgazebo_ros_factory.so"/>
+    <plugin name="gazebo_ros_state" filename="libgazebo_ros_state.so">
+      <update_rate>10.0</update_rate>
+    </plugin>
+
+    <plugin name="grasp_welder" filename="libgrasp_welder.so">
+      <ros>
+        <namespace>/ur_lab</namespace>
+      </ros>
+    </plugin>
+
+    <!-- stiffer constraint solving => stable pinched grasps -->
+    <physics type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+      <ode>
+        <solver>
+          <iterations>150</iterations>
+          <sor>1.4</sor>
+        </solver>
+        <constraints>
+          <cfm>0.00001</cfm>
+          <erp>0.2</erp>
+        </constraints>
+      </ode>
+    </physics>
 
     <include>
       <uri>model://sun</uri>
@@ -82,7 +107,8 @@
       </link>
     </model>
 
-    <!-- Cube Left -->
+    <!-- Loose cubes removed: pick_cube spawns its own single cube -->
+    <!--
     <model name="cube_left">
       <pose>0.71 0.15 0.75 0 0 0</pose>
       <link name="link">
@@ -100,7 +126,6 @@
       </link>
     </model>
 
-    <!-- Cube Right -->
     <model name="cube_right">
       <pose>0.8 -0.15 0.75 0 0 0</pose>
       <link name="link">
@@ -117,6 +142,7 @@
         </visual>
       </link>
     </model>
+    -->
 
   </world>
 </sdf>

@@ -1,0 +1,19 @@
+[3.868s] Invoking command in '/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab': PYTHONPATH=/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab/build --no-deps symlink_data
+[4.522s] running develop
+[4.809s] running egg_info
+[4.811s] writing ur_lab.egg-info/PKG-INFO
+[4.814s] writing dependency_links to ur_lab.egg-info/dependency_links.txt
+[4.818s] writing entry points to ur_lab.egg-info/entry_points.txt
+[4.822s] writing requirements to ur_lab.egg-info/requires.txt
+[4.825s] writing top-level names to ur_lab.egg-info/top_level.txt
+[4.962s] reading manifest file 'ur_lab.egg-info/SOURCES.txt'
+[5.094s] writing manifest file 'ur_lab.egg-info/SOURCES.txt'
+[5.105s] running build_ext
+[5.107s] Creating /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/lib/python3.10/site-packages/ur-lab.egg-link (link to .)
+[5.127s] Installing add_scene script to /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/lib/ur_lab
+[5.141s] Installing move_robot script to /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/lib/ur_lab
+[5.150s] Installing pick_cube script to /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/lib/ur_lab
+[5.168s] 
+[5.170s] Installed /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab
+[5.172s] running symlink_data
+[5.295s] Invoked command in '/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab' returned '0': PYTHONPATH=/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab/build --no-deps symlink_data

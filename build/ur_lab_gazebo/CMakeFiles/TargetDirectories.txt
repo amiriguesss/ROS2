@@ -1,0 +1,10 @@
+/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab_gazebo/CMakeFiles/uninstall.dir
+/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab_gazebo/CMakeFiles/ur_lab_gazebo_uninstall.dir
+/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab_gazebo/CMakeFiles/grasp_welder.dir
+/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab_gazebo/CMakeFiles/test.dir
+/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab_gazebo/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab_gazebo/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab_gazebo/CMakeFiles/list_install_components.dir
+/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab_gazebo/CMakeFiles/install.dir
+/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab_gazebo/CMakeFiles/install/local.dir
+/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab_gazebo/CMakeFiles/install/strip.dir

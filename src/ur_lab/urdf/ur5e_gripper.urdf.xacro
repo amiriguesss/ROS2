@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="ur5e_with_gripper">
+
+  <!-- Full UR5e arm exactly as ur_sim_control.launch.py builds it today
+       (world link, ros2_control block, gazebo plugin all come from here) -->
+  <xacro:include filename="$(find ur_description)/urdf/ur.urdf.xacro"/>
+
+  <!-- ================= SIMPLE PARALLEL 2-FINGER GRIPPER =================
+       Mounted on tool0. Two independent prismatic joints close along local y.
+       open = 0.0 m, closed = 0.006 m (squeezes a 0.05 m cube by ~1 mm/side). -->
+
+  <link name="gripper_base">
+    <visual>
+      <geometry><box size="0.08 0.04 0.03"/></geometry>
+      <material name="gripper_grey"><color rgba="0.3 0.3 0.3 1"/></material>
+    </visual>
+    <collision>
+      <geometry><box size="0.08 0.04 0.03"/></geometry>
+    </collision>
+    <inertial>
+      <mass value="0.3"/>
+      <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+    </inertial>
+  </link>
+
+  <joint name="gripper_base_joint" type="fixed">
+    <parent link="tool0"/>
+    <child link="gripper_base"/>
+    <!-- +z of tool0 points TOWARD the grasped object (out of the flange) -->
+    <origin xyz="0 0 0.015" rpy="0 0 0"/>
+  </joint>
+
+  <link name="finger_left">
+    <visual>
+      <geometry><box size="0.01 0.02 0.07"/></geometry>
+      <material name="finger_black"><color rgba="0.1 0.1 0.1 1"/></material>
+    </visual>
+    <collision>
+      <geometry><box size="0.01 0.02 0.07"/></geometry>
+    </collision>
+    <inertial>
+      <mass value="0.15"/>
+      <inertia ixx="0.00004" ixy="0" ixz="0" iyy="0.00004" iyz="0" izz="0.00004"/>
+    </inertial>
+  </link>
+
+  <link name="finger_right">
+    <visual>
+      <geometry><box size="0.01 0.02 0.07"/></geometry>
+      <material name="finger_black"><color rgba="0.1 0.1 0.1 1"/></material>
+    </visual>
+    <collision>
+      <geometry><box size="0.01 0.02 0.07"/></geometry>
+    </collision>
+    <inertial>
+      <mass value="0.15"/>
+      <inertia ixx="0.00004" ixy="0" ixz="0" iyy="0.00004" iyz="0" izz="0.00004"/>
+    </inertial>
+  </link>
+
+  <joint name="finger_left_joint" type="prismatic">
+    <parent link="gripper_base"/>
+    <child link="finger_left"/>
+    <origin xyz="0 -0.040 0.0625" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="0.0" upper="0.010" effort="30" velocity="0.05"/>
+    <dynamics damping="20.0" friction="1.0"/>
+  </joint>
+
+  <joint name="finger_right_joint" type="prismatic">
+    <parent link="gripper_base"/>
+    <child link="finger_right"/>
+    <origin xyz="0 0.040 0.0625" rpy="0 0 0"/>
+    <axis xyz="0 -1 0"/>
+    <limit lower="0.0" upper="0.010" effort="30" velocity="0.05"/>
+    <dynamics damping="20.0" friction="1.0"/>
+  </joint>
+
+  <!-- High friction + gentle contact correction => no vibration / no ejection -->
+  <gazebo reference="finger_left">
+    <mu1>100</mu1>
+    <mu2>100</mu2>
+    <kp>20000</kp>
+    <kd>100</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>0.05</maxVel>
+  </gazebo>
+  <gazebo reference="finger_right">
+    <mu1>100</mu1>
+    <mu2>100</mu2>
+    <kp>20000</kp>
+    <kd>100</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>0.05</maxVel>
+  </gazebo>
+
+  <!-- Second hardware component for the fingers (merged with the arm's one) -->
+  <ros2_control name="gripper_system" type="system">
+    <hardware>
+      <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+    </hardware>
+    <joint name="finger_left_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="finger_right_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+  </ros2_control>
+
+</robot>

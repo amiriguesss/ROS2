@@ -1,0 +1,67 @@
+[0.000000] (-) TimerEvent: {}
+[0.000880] (-) JobUnselected: {'identifier': 'ur_simulation_gazebo'}
+[0.001602] (ur_lab) JobQueued: {'identifier': 'ur_lab', 'dependencies': OrderedDict()}
+[0.002204] (ur_lab) JobStarted: {'identifier': 'ur_lab'}
+[0.099060] (-) TimerEvent: {}
+[0.200325] (-) TimerEvent: {}
+[0.301219] (-) TimerEvent: {}
+[0.401869] (-) TimerEvent: {}
+[0.502772] (-) TimerEvent: {}
+[0.603752] (-) TimerEvent: {}
+[0.704730] (-) TimerEvent: {}
+[0.805931] (-) TimerEvent: {}
+[0.906591] (-) TimerEvent: {}
+[1.007491] (-) TimerEvent: {}
+[1.108372] (-) TimerEvent: {}
+[1.209009] (-) TimerEvent: {}
+[1.309684] (-) TimerEvent: {}
+[1.410283] (-) TimerEvent: {}
+[1.510992] (-) TimerEvent: {}
+[1.612005] (-) TimerEvent: {}
+[1.712862] (-) TimerEvent: {}
+[1.814222] (-) TimerEvent: {}
+[1.915227] (-) TimerEvent: {}
+[2.015966] (-) TimerEvent: {}
+[2.116885] (-) TimerEvent: {}
+[2.217916] (-) TimerEvent: {}
+[2.318676] (-) TimerEvent: {}
+[2.369514] (ur_lab) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab/build', '--no-deps', 'symlink_data'], 'cwd': '/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab', 'env': {'USER': 'amir', 'WT_PROFILE_ID': '{7c955474-7b27-5778-bf09-68f5eda18ebe}', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/amir', 'OLDPWD': '/mnt/c/Users/Amir/Downloads/ros2_ws', 'LESS': '-R', 'ZSH': '/home/amir/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'COLCON_PREFIX_PATH': '/mnt/c/Users/Amir/Downloads/ros2_ws/install', 'LOGNAME': 'amir', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', 'WSL_INTEROP': '/run/WSL/1122_interop', 'NAME': 'DESKTOP-3SQ0MFE', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/OpenSSH:/mnt/c/Program Files/Python39/Scripts/:/mnt/c/Program Files/Python39/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/dotnet/:/mnt/d/Program Files/nodejs/:/mnt/c/Users/Amir/AppData/Local/Microsoft/WindowsApps:/mnt/d/Program Files/modeltech64_2020.4/win64:/mnt/d/Program Files/Microsoft VS Code/bin:/mnt/d/intelFPGA/20.1/modelsim_ase/win32aloem:/mnt/c/Users/Amir/AppData/Local/Python/bin:/mnt/c/Users/Amir/AppData/Local/Microsoft/WinGet/Links:/mnt/c/Users/Amir/AppData/Local/Programs/MiKTeX/miktex/bin/x64/:/mnt/c/Users/Amir/AppData/Roaming/npm', 'XDG_RUNTIME_DIR': '/run/user/1000', 'WT_SESSION': '42d32497-4a25-4631-b189-555a0a540840', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_simulation_gazebo:/mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab:/opt/ros/humble', 'SHELL': '/usr/bin/zsh', 'PWD': '/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab', 'PYTHONPATH': '/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/lib/python3.10/site-packages:/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab:/mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'HOSTTYPE': 'x86_64', 'WSL2_GUI_APPS_ENABLED': '1', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:', 'CMAKE_PREFIX_PATH': '/mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_simulation_gazebo'}, 'shell': False}
+[2.418799] (-) TimerEvent: {}
+[2.519539] (-) TimerEvent: {}
+[2.620407] (-) TimerEvent: {}
+[2.721242] (-) TimerEvent: {}
+[2.821747] (-) TimerEvent: {}
+[2.922426] (-) TimerEvent: {}
+[2.956030] (ur_lab) StdoutLine: {'line': b'running develop\n'}
+[3.022510] (-) TimerEvent: {}
+[3.123306] (-) TimerEvent: {}
+[3.184288] (ur_lab) StdoutLine: {'line': b'running egg_info\n'}
+[3.186838] (ur_lab) StdoutLine: {'line': b'writing ur_lab.egg-info/PKG-INFO\n'}
+[3.189878] (ur_lab) StdoutLine: {'line': b'writing dependency_links to ur_lab.egg-info/dependency_links.txt\n'}
+[3.192605] (ur_lab) StdoutLine: {'line': b'writing entry points to ur_lab.egg-info/entry_points.txt\n'}
+[3.197214] (ur_lab) StdoutLine: {'line': b'writing requirements to ur_lab.egg-info/requires.txt\n'}
+[3.199578] (ur_lab) StdoutLine: {'line': b'writing top-level names to ur_lab.egg-info/top_level.txt\n'}
+[3.223267] (-) TimerEvent: {}
+[3.295736] (ur_lab) StdoutLine: {'line': b"reading manifest file 'ur_lab.egg-info/SOURCES.txt'\n"}
+[3.323370] (-) TimerEvent: {}
+[3.413507] (ur_lab) StdoutLine: {'line': b"writing manifest file 'ur_lab.egg-info/SOURCES.txt'\n"}
+[3.421901] (ur_lab) StdoutLine: {'line': b'running build_ext\n'}
+[3.424034] (-) TimerEvent: {}
+[3.424410] (ur_lab) StdoutLine: {'line': b'Creating /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/lib/python3.10/site-packages/ur-lab.egg-link (link to .)\n'}
+[3.438758] (ur_lab) StdoutLine: {'line': b'Installing add_scene script to /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/lib/ur_lab\n'}
+[3.456774] (ur_lab) StdoutLine: {'line': b'Installing move_robot script to /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/lib/ur_lab\n'}
+[3.473392] (ur_lab) StdoutLine: {'line': b'Installing pick_cube script to /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/lib/ur_lab\n'}
+[3.493396] (ur_lab) StdoutLine: {'line': b'\n'}
+[3.495288] (ur_lab) StdoutLine: {'line': b'Installed /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab\n'}
+[3.496861] (ur_lab) StdoutLine: {'line': b'running symlink_data\n'}
+[3.524108] (-) TimerEvent: {}
+[3.567213] (ur_lab) StdoutLine: {'line': b'creating /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/share/ur_lab/config\n'}
+[3.577886] (ur_lab) StdoutLine: {'line': b'symbolically linking /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab/config/ur_controllers.yaml -> /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/share/ur_lab/config\n'}
+[3.584087] (ur_lab) StdoutLine: {'line': b'creating /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/share/ur_lab/urdf\n'}
+[3.593010] (ur_lab) StdoutLine: {'line': b'symbolically linking /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab/urdf/ur5e_gripper.urdf.xacro -> /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/share/ur_lab/urdf\n'}
+[3.612923] (ur_lab) CommandEnded: {'returncode': 0}
+[3.624176] (-) TimerEvent: {}
+[3.724821] (-) TimerEvent: {}
+[3.825680] (-) TimerEvent: {}
+[3.872232] (ur_lab) JobEnded: {'identifier': 'ur_lab', 'rc': 0}
+[3.880466] (-) EventReactorShutdown: {}
