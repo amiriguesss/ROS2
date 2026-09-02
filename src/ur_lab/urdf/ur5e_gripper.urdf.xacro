@@ -111,4 +111,70 @@
     </joint>
   </ros2_control>
 
+  <gazebo reference="finger_right">
+    <mu1>100</mu1>
+    <mu2>100</mu2>
+    <kp>20000</kp>
+    <kd>100</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>0.05</maxVel>
+  </gazebo>
+
+  <!-- ================= WRIST CAMERA =================
+       Small camera fixed to the gripper base, offset to the side of the
+       fingers, looking straight down along gripper +z (the same direction
+       the fingers reach). Used by the scan_pick node to classify cube
+       colours while the arm sweeps across the table. -->
+  <link name="wrist_camera_link">
+    <visual>
+      <geometry><box size="0.02 0.02 0.02"/></geometry>
+      <material name="camera_black"><color rgba="0.05 0.05 0.05 1"/></material>
+    </visual>
+    <inertial>
+      <mass value="0.05"/>
+      <inertia ixx="0.000004" ixy="0" ixz="0" iyy="0.000004" iyz="0" izz="0.000004"/>
+    </inertial>
+  </link>
+
+  <joint name="wrist_camera_joint" type="fixed">
+    <parent link="gripper_base"/>
+    <child link="wrist_camera_link"/>
+    <!-- beside the fingers (fingers live around y=0) and BELOW their tips,
+         so the camera view is never blocked by the gripper itself -->
+    <origin xyz="0 0.07 0.10" rpy="0 0 0"/>
+  </joint>
+
+  <gazebo reference="wrist_camera_link">
+    <sensor name="wrist_camera" type="camera">
+      <update_rate>10.0</update_rate>
+      <always_on>true</always_on>
+      <visualize>true</visualize>
+      <!-- Aim the optical axis (sensor +x) at the cube side face. The camera
+           sits 0.07 m to the side of the grasp axis (tool y = world -y in
+           the tool-down orientation) and 0.115 m above the TCP plane, so
+           pitch -0.965 rad + yaw -1.5708 rad makes the ray pass UNDER the
+           fingertips and land on the cube face at mid height (verified
+           against the IK ray-cast - do not eyeball these numbers).
+           NOTE - keep this comment free of colon-space sequences because
+           launch parses robot_description as YAML. -->
+      <pose>0 0 0 0 -0.965 -1.5708</pose>
+      <camera>
+        <horizontal_fov>1.2</horizontal_fov>
+        <image>
+          <width>640</width>
+          <height>480</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.02</near>
+          <far>5.0</far>
+        </clip>
+      </camera>
+      <plugin name="wrist_camera_plugin" filename="libgazebo_ros_camera.so">
+        <camera_name>wrist_camera</camera_name>
+        <frame_name>wrist_camera_link</frame_name>
+      </plugin>
+    </sensor>
+  </gazebo>
+
 </robot>

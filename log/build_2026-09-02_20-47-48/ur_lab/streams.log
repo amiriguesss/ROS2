@@ -1,0 +1,35 @@
+[2.549s] Invoking command in '/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab': PYTHONPATH=/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab/build --no-deps symlink_data
+[3.329s] running develop
+[3.574s] running egg_info
+[3.577s] creating ur_lab.egg-info
+[3.579s] writing ur_lab.egg-info/PKG-INFO
+[3.585s] writing dependency_links to ur_lab.egg-info/dependency_links.txt
+[3.591s] writing entry points to ur_lab.egg-info/entry_points.txt
+[3.594s] writing requirements to ur_lab.egg-info/requires.txt
+[3.598s] writing top-level names to ur_lab.egg-info/top_level.txt
+[3.604s] writing manifest file 'ur_lab.egg-info/SOURCES.txt'
+[3.692s] reading manifest file 'ur_lab.egg-info/SOURCES.txt'
+[3.777s] writing manifest file 'ur_lab.egg-info/SOURCES.txt'
+[3.793s] running build_ext
+[3.798s] Creating /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/lib/python3.10/site-packages/ur-lab.egg-link (link to .)
+[3.820s] Installing add_scene script to /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/lib/ur_lab
+[3.830s] Installing move_robot script to /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/lib/ur_lab
+[3.843s] Installing pick_cube script to /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/lib/ur_lab
+[3.859s] Installing scan_pick script to /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/lib/ur_lab
+[3.882s] 
+[3.884s] Installed /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab
+[3.887s] running symlink_data
+[3.894s] creating /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/share/ament_index
+[3.897s] creating /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/share/ament_index/resource_index
+[3.900s] creating /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/share/ament_index/resource_index/packages
+[3.917s] symbolically linking /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab/resource/ur_lab -> /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/share/ament_index/resource_index/packages
+[3.936s] symbolically linking /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab/package.xml -> /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/share/ur_lab
+[3.945s] creating /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/share/ur_lab/launch
+[3.961s] symbolically linking /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab/launch/sim.launch.py -> /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/share/ur_lab/launch
+[3.975s] creating /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/share/ur_lab/worlds
+[3.989s] symbolically linking /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab/worlds/lab.world -> /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/share/ur_lab/worlds
+[4.000s] creating /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/share/ur_lab/config
+[4.017s] symbolically linking /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab/config/ur_controllers.yaml -> /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/share/ur_lab/config
+[4.029s] creating /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/share/ur_lab/urdf
+[4.046s] symbolically linking /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab/urdf/ur5e_gripper.urdf.xacro -> /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/share/ur_lab/urdf
+[4.078s] Invoked command in '/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab' returned '0': PYTHONPATH=/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab/build --no-deps symlink_data

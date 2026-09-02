@@ -1,0 +1,61 @@
+[0.834s] Invoking command in '/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab:/opt/ros/humble /usr/bin/cmake /mnt/c/Users/Amir/Downloads/ros2_ws/src/ur_lab_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab_gazebo
+[1.389s] -- The C compiler identification is GNU 11.4.0
+[2.469s] -- The CXX compiler identification is GNU 11.4.0
+[2.472s] -- Detecting C compiler ABI info
+[3.053s] -- Detecting C compiler ABI info - done
+[3.095s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.098s] -- Detecting C compile features
+[3.101s] -- Detecting C compile features - done
+[3.156s] -- Detecting CXX compiler ABI info
+[3.850s] -- Detecting CXX compiler ABI info - done
+[3.890s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.893s] -- Detecting CXX compile features
+[3.896s] -- Detecting CXX compile features - done
+[4.044s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.879s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[5.196s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[6.497s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[7.757s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[7.938s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[8.088s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[8.321s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.656s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[9.635s] -- Found rmw_implementation_cmake: 6.1.3 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[9.704s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[11.762s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[13.291s] -- Found FastRTPS: /opt/ros/humble/include  
+[15.793s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[16.102s] -- Looking for pthread.h
+[16.906s] -- Looking for pthread.h - found
+[16.919s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[17.600s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[17.607s] -- Found Threads: TRUE  
+[18.156s] -- Found gazebo_dev: 3.9.0 (/opt/ros/humble/share/gazebo_dev/cmake)
+[18.270s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[18.272s] -- Checking for module 'bullet>=2.82'
+[18.376s] --   Found bullet, version 3.05
+[19.329s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[19.658s] -- Found assimp: /usr/include (found version "5.2.0") 
+[20.154s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[20.751s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[21.148s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[21.340s] -- Looking for ignition-math6 -- found version 6.16.0
+[21.460s] -- Searching for dependencies of ignition-math6
+[21.462s] -- Looking for OGRE...
+[21.465s] -- OGRE_PREFIX_WATCH changed.
+[21.479s] -- Checking for module 'OGRE'
+[21.601s] --   Found OGRE, version 1.9.0
+[21.731s] -- Found Ogre Ghadamon (1.9.0)
+[22.250s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[22.257s] -- Looking for OGRE_Paging...
+[22.759s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[22.761s] -- Looking for OGRE_Terrain...
+[23.220s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[23.222s] -- Looking for OGRE_Property...
+[23.663s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[23.666s] -- Looking for OGRE_RTShaderSystem...
+[24.115s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[24.116s] -- Looking for OGRE_Volume...
+[24.560s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[24.562s] -- Looking for OGRE_Overlay...
+[24.998s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so

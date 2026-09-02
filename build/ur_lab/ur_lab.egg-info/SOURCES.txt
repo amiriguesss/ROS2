@@ -10,6 +10,7 @@ ur_lab/move_robot.py
 ur_lab/move_robot2.py
 ur_lab/move_spawn.py
 ur_lab/pick_cube.py
+ur_lab/scan_pick.py
 ur_lab/test.py
 ur_lab/testcube.py
 ur_lab.egg-info/PKG-INFO

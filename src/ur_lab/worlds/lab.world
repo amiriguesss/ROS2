@@ -29,6 +29,28 @@
       </ode>
     </physics>
 
+    <ambient_light>
+      <direction>-0.5 -0.5 -0.6</direction>
+      <intensity>0.4</intensity>
+    </ambient_light>
+
+    <sun>
+      <pose>0 0 0 0 0 0</pose>
+      <type>directional</type>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.4 0.4 0.4 1</specular>
+    </sun>
+
+    <sky>
+      <type>sun</type>
+      <top_color>0.8 0.8 0.9</top_color>
+      <bottom_color>0.2 0.2 0.3</bottom_color>
+      <sun>
+        <pose>0 0 0 0 0 0</pose>
+        <diffuse>0.8 0.8 0.8 1</diffuse>
+      </sun>
+    </sky>
+
     <include>
       <uri>model://sun</uri>
     </include>

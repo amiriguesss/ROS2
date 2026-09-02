@@ -132,6 +132,10 @@ def lerp(qa, qb, t):
 
 class PickCube(Node):
 
+    # subclasses (e.g. scan_pick) reuse this node's helpers but launch their
+    # own sequence after extra setup - set to False to suppress auto-start
+    AUTO_START = True
+
     def __init__(self):
         super().__init__('pick_cube')
 
@@ -161,7 +165,8 @@ class PickCube(Node):
         while not self.spawn_client.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('Spawn service not ready yet...')
 
-        threading.Thread(target=self.run_sequence, daemon=True).start()
+        if self.AUTO_START:
+            threading.Thread(target=self.run_sequence, daemon=True).start()
 
     def _states_cb(self, msg):
         self.model_states = msg
