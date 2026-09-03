@@ -121,10 +121,11 @@
   </gazebo>
 
   <!-- ================= WRIST CAMERA =================
-       Small camera fixed to the gripper base, offset to the side of the
-       fingers, looking straight down along gripper +z (the same direction
-       the fingers reach). Used by the scan_pick node to classify cube
-       colours while the arm sweeps across the table. -->
+     Small camera fixed to the gripper base, sitting on the grasp axis
+     (y = 0) between the finger roots and looking straight down along
+     gripper +z (the same direction the fingers reach). Used by the
+     scan_pick node to classify the colour of the cube that is directly
+     under the gripper while the arm sweeps across the table. -->
   <link name="wrist_camera_link">
     <visual>
       <geometry><box size="0.02 0.02 0.02"/></geometry>
@@ -139,9 +140,12 @@
   <joint name="wrist_camera_joint" type="fixed">
     <parent link="gripper_base"/>
     <child link="wrist_camera_link"/>
-    <!-- beside the fingers (fingers live around y=0) and BELOW their tips,
-         so the camera view is never blocked by the gripper itself -->
-    <origin xyz="0 0.07 0.10" rpy="0 0 0"/>
+    <!-- centred on the grasp axis (y = 0) and tucked between the finger
+         roots (base box top is at z = 0.015) so the camera looks down
+         past the fingers at the cube below. Fingertips reach z = 0.0275
+         and only enter the 1.2 rad FOV beyond 0.058 m depth, which is
+         past their tip, so the view is never blocked by the gripper. -->
+    <origin xyz="0 0 0.025" rpy="0 0 0"/>
   </joint>
 
   <gazebo reference="wrist_camera_link">
@@ -149,15 +153,15 @@
       <update_rate>10.0</update_rate>
       <always_on>true</always_on>
       <visualize>true</visualize>
-      <!-- Aim the optical axis (sensor +x) at the cube side face. The camera
-           sits 0.07 m to the side of the grasp axis (tool y = world -y in
-           the tool-down orientation) and 0.115 m above the TCP plane, so
-           pitch -0.965 rad + yaw -1.5708 rad makes the ray pass UNDER the
-           fingertips and land on the cube face at mid height (verified
-           against the IK ray-cast - do not eyeball these numbers).
+      <!-- Aim the optical axis (sensor +x) straight down along gripper
+           base +z with pitch -1.5708 rad. At the 0.18 m scan hover the
+           cube top face lands centred in the image and fills the centre
+           crop used by scan_pick, so the gripper sees the colour of the
+           cube it is hovering over (verified against the hover and
+           grasp depths - do not eyeball these numbers).
            NOTE - keep this comment free of colon-space sequences because
            launch parses robot_description as YAML. -->
-      <pose>0 0 0 0 -0.965 -1.5708</pose>
+      <pose>0 0 0 0 -1.5708 0</pose>
       <camera>
         <horizontal_fov>1.2</horizontal_fov>
         <image>

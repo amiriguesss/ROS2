@@ -1,0 +1,95 @@
+[0.744s] Invoking command in '/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab:/opt/ros/humble /usr/bin/cmake --build /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab_gazebo -- -j16 -l16
+[1.130s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.721s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.855s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[2.039s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.042s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.050s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.067s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.085s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.139s] -- Found rmw_implementation_cmake: 6.1.3 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.153s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[6.765s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.818s] -- Found gazebo_dev: 3.9.0 (/opt/ros/humble/share/gazebo_dev/cmake)
+[6.912s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[6.993s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[6.995s] -- Looking for ignition-math6 -- found version 6.16.0
+[7.001s] -- Searching for dependencies of ignition-math6
+[7.004s] -- Looking for OGRE...
+[7.030s] -- Found Ogre Ghadamon (1.9.0)
+[7.031s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[7.037s] -- Looking for OGRE_Paging...
+[7.039s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[7.040s] -- Looking for OGRE_Terrain...
+[7.042s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[7.043s] -- Looking for OGRE_Property...
+[7.045s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[7.047s] -- Looking for OGRE_RTShaderSystem...
+[7.048s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[7.049s] -- Looking for OGRE_Volume...
+[7.051s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[7.052s] -- Looking for OGRE_Overlay...
+[7.054s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[19.324s] -- Looking for ignition-math6 -- found version 6.16.0
+[19.325s] -- Looking for ignition-transport8 -- found version 8.2.1
+[19.327s] -- Searching for dependencies of ignition-transport8
+[20.077s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[20.777s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[20.800s] -- Checking for module 'libzmq >= 4'
+[20.948s] --   Found libzmq , version 4.3.4
+[21.281s] -- Checking for module 'uuid'
+[21.433s] --   Found uuid, version 2.37.2
+[21.741s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[21.743s] -- Searching for dependencies of ignition-msgs5
+[22.563s] -- Looking for ignition-math6 -- found version 6.16.0
+[22.600s] -- Checking for module 'tinyxml2'
+[22.787s] --   Found tinyxml2, version 9.0.0
+[23.193s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[23.195s] -- Looking for ignition-common3 -- found version 3.14.0
+[23.198s] -- Searching for dependencies of ignition-common3
+[23.200s] -- Looking for dlfcn.h - found
+[23.202s] -- Looking for libdl - found
+[23.301s] -- Searching for <ignition-common3> component [graphics]
+[23.303s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[23.305s] -- Searching for dependencies of ignition-common3-graphics
+[23.306s] -- Looking for ignition-math6 -- found version 6.16.0
+[23.308s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[23.310s] -- Searching for dependencies of ignition-fuel_tools4
+[24.364s] -- Checking for module 'jsoncpp'
+[24.514s] --   Found jsoncpp, version 1.9.5
+[24.844s] -- Checking for module 'libzip'
+[24.969s] --   Found libzip, version 1.7.3
+[25.304s] -- Looking for ignition-common3 -- found version 3.14.0
+[25.306s] -- Looking for ignition-math6 -- found version 6.16.0
+[25.308s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[25.309s] -- Gazebo version: 11.10
+[25.311s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[26.108s] -- Configuring done
+[26.389s] -- Generating done
+[26.621s] -- Build files have been written to: /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab_gazebo
+[26.872s] [35m[1mConsolidate compiler generated dependencies of target grasp_welder[0m
+[29.622s] [ 50%] [32mBuilding CXX object CMakeFiles/grasp_welder.dir/src/grasp_welder.cpp.o[0m
+[42.778s] [100%] [32m[1mLinking CXX shared library libgrasp_welder.so[0m
+[48.635s] [100%] Built target grasp_welder
+[48.716s] Invoked command in '/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab:/opt/ros/humble /usr/bin/cmake --build /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab_gazebo -- -j16 -l16
+[48.799s] Invoking command in '/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab:/opt/ros/humble /usr/bin/cmake --install /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab_gazebo
+[48.867s] -- Install configuration: ""
+[48.873s] -- Execute custom install script
+[48.887s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab_gazebo/lib/libgrasp_welder.so
+[48.908s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab_gazebo/share/ur_lab_gazebo/environment/ur_lab_gazebo.dsv
+[48.940s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab_gazebo/share/ament_index/resource_index/package_run_dependencies/ur_lab_gazebo
+[48.970s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab_gazebo/share/ament_index/resource_index/parent_prefix_path/ur_lab_gazebo
+[48.983s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab_gazebo/share/ur_lab_gazebo/environment/ament_prefix_path.sh
+[48.999s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab_gazebo/share/ur_lab_gazebo/environment/ament_prefix_path.dsv
+[49.015s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab_gazebo/share/ur_lab_gazebo/environment/path.sh
+[49.031s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab_gazebo/share/ur_lab_gazebo/environment/path.dsv
+[49.047s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab_gazebo/share/ur_lab_gazebo/local_setup.bash
+[49.061s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab_gazebo/share/ur_lab_gazebo/local_setup.sh
+[49.077s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab_gazebo/share/ur_lab_gazebo/local_setup.zsh
+[49.093s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab_gazebo/share/ur_lab_gazebo/local_setup.dsv
+[49.099s] -- Symlinking: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab_gazebo/share/ur_lab_gazebo/package.dsv
+[49.213s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab_gazebo/share/ament_index/resource_index/packages/ur_lab_gazebo
+[49.229s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab_gazebo/share/ur_lab_gazebo/cmake/ur_lab_gazeboConfig.cmake
+[49.244s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab_gazebo/share/ur_lab_gazebo/cmake/ur_lab_gazeboConfig-version.cmake
+[49.260s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab_gazebo/share/ur_lab_gazebo/package.xml
+[49.264s] Invoked command in '/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab:/opt/ros/humble /usr/bin/cmake --install /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_lab_gazebo
