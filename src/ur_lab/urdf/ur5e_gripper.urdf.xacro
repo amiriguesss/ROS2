@@ -140,12 +140,13 @@
   <joint name="wrist_camera_joint" type="fixed">
     <parent link="gripper_base"/>
     <child link="wrist_camera_link"/>
-    <!-- centred on the grasp axis (y = 0) and tucked between the finger
-         roots (base box top is at z = 0.015) so the camera looks down
-         past the fingers at the cube below. Fingertips reach z = 0.0275
-         and only enter the 1.2 rad FOV beyond 0.058 m depth, which is
-         past their tip, so the view is never blocked by the gripper. -->
-    <origin xyz="0 0 0.025" rpy="0 0 0"/>
+    <!-- The pointing rotation lives HERE on the joint and not on the
+         sensor pose element, because Gazebo can ignore the sensor pose
+         of URDF gazebo extensions (the camera then just looks along the
+         link x axis horizontally). pitch -1.5708 rad points the camera
+         optical axis straight down the grasp axis, roll 3.1416 keeps
+         the image upright with the sweep direction at the top -->
+    <origin xyz="0 0 0.025" rpy="3.1416 -1.5708 0"/>
   </joint>
 
   <gazebo reference="wrist_camera_link">
@@ -153,15 +154,10 @@
       <update_rate>10.0</update_rate>
       <always_on>true</always_on>
       <visualize>true</visualize>
-      <!-- Aim the optical axis (sensor +x) straight down along gripper
-           base +z with pitch -1.5708 rad. At the 0.18 m scan hover the
-           cube top face lands centred in the image and fills the centre
-           crop used by scan_pick, so the gripper sees the colour of the
-           cube it is hovering over (verified against the hover and
-           grasp depths - do not eyeball these numbers).
-           NOTE - keep this comment free of colon-space sequences because
-           launch parses robot_description as YAML. -->
-      <pose>0 0 0 0 -1.5708 0</pose>
+      <!-- keep the sensor pose at identity - the pointing comes from the
+           joint rotation above so the camera always looks straight down
+           at the cube under the gripper -->
+      <pose>0 0 0 0 0 0</pose>
       <camera>
         <horizontal_fov>1.2</horizontal_fov>
         <image>

@@ -56,11 +56,13 @@ CUBE_XS = [0.58, 0.68, 0.78]   # the three line positions along x
 SCAN_Y = 0.0                   # constant y of the line
 SCAN_Z_SPAWN = 0.4             # spawn height (cubes drop onto the table)
 SCAN_SETTLE_TIME = 2.5         # seconds to let the dropped cubes come to rest
-SCAN_HOVER_ABOVE_CUBE = 0.18   # TCP height above the resting cubes while scanning
+SCAN_HOVER_ABOVE_CUBE = 0.12   # TCP height above the resting cubes while
+                               # scanning (lower hover = cube fills the image)
 SCAN_X_START = 0.53            # sweep starts slightly before the first cube
-SCAN_X_END = 0.78              # sweep ends on the last cube (reach limit)
-SCAN_STEP = 0.05               # x advance per scan stop
-SCAN_DWELL = 1.0               # seconds spent classifying at every stop
+SCAN_X_END = 0.79              # sweep ends just past the last cube (reach limit)
+SCAN_STEP = 0.02               # x advance per scan stop (small stops = several
+                               # classification chances directly over each cube)
+SCAN_DWELL = 1.5               # seconds spent classifying at every stop
 TARGET_COLOR = 'red'           # the colour we pick up
 
 IMG_TOPIC = '/wrist_camera/image_raw'
