@@ -1,0 +1,24 @@
+[0.816s] Invoking command in '/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_simulation_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab:/opt/ros/humble /usr/bin/cmake --build /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_simulation_gazebo -- -j16 -l16
+[1.075s] Invoked command in '/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_simulation_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab:/opt/ros/humble /usr/bin/cmake --build /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_simulation_gazebo -- -j16 -l16
+[1.168s] Invoking command in '/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_simulation_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab:/opt/ros/humble /usr/bin/cmake --install /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_simulation_gazebo
+[1.220s] -- Install configuration: ""
+[1.235s] -- Execute custom install script
+[1.298s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/ur_controllers.yaml
+[1.359s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur_sim_control.launch.py
+[1.396s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur_sim_moveit.launch.py
+[1.463s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_simulation_gazebo/share/ament_index/resource_index/package_run_dependencies/ur_simulation_gazebo
+[1.523s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_simulation_gazebo/share/ament_index/resource_index/parent_prefix_path/ur_simulation_gazebo
+[1.549s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/ament_prefix_path.sh
+[1.582s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/ament_prefix_path.dsv
+[1.609s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/path.sh
+[1.641s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/path.dsv
+[1.667s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.bash
+[1.692s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.sh
+[1.723s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.zsh
+[1.754s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.dsv
+[1.770s] -- Symlinking: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.dsv
+[1.925s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_simulation_gazebo/share/ament_index/resource_index/packages/ur_simulation_gazebo
+[1.948s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/cmake/ur_simulation_gazeboConfig.cmake
+[1.974s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/cmake/ur_simulation_gazeboConfig-version.cmake
+[2.004s] -- Up-to-date symlink: /mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.xml
+[2.008s] Invoked command in '/mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_simulation_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/c/Users/Amir/Downloads/ros2_ws/install/ur_lab:/opt/ros/humble /usr/bin/cmake --install /mnt/c/Users/Amir/Downloads/ros2_ws/build/ur_simulation_gazebo
